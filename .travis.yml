@@ -33,6 +33,7 @@ install:
 script:
 - export PATH=$TRAVIS_BUILD_DIR/local/usr/bin:$PATH
 - cd $TRAVIS_BUILD_DIR/sdk/OpenWrt-SDK-*
+- ls package/feeds/alljoyn
 - make package/feeds/alljoyn/alljoyn-sample_apps/compile V=s
 - find $TRAVIS_BUILD_DIR/sdk/OpenWrt-SDK-*/bin/
 - find . -name *.ipk -exec cp {} $TRAVIS_BUILD_DIR \;
