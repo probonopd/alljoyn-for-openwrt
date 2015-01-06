@@ -1,4 +1,4 @@
-alljoyn-for-openwrt
+alljoyn-for-openwrt [![Build Status](https://travis-ci.org/probonopd/alljoyn-for-openwrt.svg)](https://travis-ci.org/probonopd/alljoyn-for-openwrt)
 ===================
 Trying to build
 https://git.allseenalliance.org/cgit/core/openwrt_feed.git on travis-ci following the instructions on https://allseenalliance.org/developers/develop/building/linux/openwrt.
