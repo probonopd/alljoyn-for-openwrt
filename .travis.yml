@@ -9,9 +9,9 @@ language: c
 compiler: gcc
 env:
   global:
-    - PACKAGE=announce
+    - PACKAGE=alljoyn-sample_apps
     - USER=probonopd
-    - REPO=announce
+    - REPO=alljoyn-for-openwrt
     - secure: "O0RaGjWTnxfra87BOE2aoG3Ez7zrkdTGmUJn+cT7FqXsxWWhUEl1Ip676P5c0kbJKyOLg975rr9dFvgJsAOpMFsLDYHAyfTAw3Ov07O+89tTxSsrIlWWUkrAk9iFLbfjDvp8VUnQZS3DKxnR/652hPnQOvbIRD+1qPMd04LEQms="
   matrix:
     - SDK_URL=https://downloads.openwrt.org/barrier_breaker/14.07/ar71xx/generic/OpenWrt-SDK-ar71xx-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
@@ -33,7 +33,7 @@ install:
 script:
 - export PATH=$TRAVIS_BUILD_DIR/local/usr/bin:$PATH
 - cd $TRAVIS_BUILD_DIR/sdk/OpenWrt-SDK-*
-- make V=s
+- make package/feeds/alljoyn/alljoyn-sample_apps/compile V=s
 - find $TRAVIS_BUILD_DIR/sdk/OpenWrt-SDK-*/bin/
 - find . -name *.ipk -exec cp {} $TRAVIS_BUILD_DIR \;
 - cd $TRAVIS_BUILD_DIR/
