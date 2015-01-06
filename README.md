@@ -7,6 +7,8 @@ The ultimate goal is to get https://git.allseenalliance.org/cgit/multimedia/audi
 
 Apparently the sound receiving hardware currently contains a "Qualcomm AllPlay Smart Audio Module", but if the whole thing is open source then it should be possible to have an OpenWrt-based device to replace the "Smart Audio Module".
 
+Qualcomm support so far seems to be mainly concerned with the client (app) side, as there is a "Qualcomm AllPlay Click SDK" support forum: https://developer.qualcomm.com/forums/qdevnet-forums/wireless-home-audio-qualcomm-allplay-click-sdk
+
 Currently compilation fails with:
 
 ```
