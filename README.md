@@ -1,8 +1,9 @@
 alljoyn-for-openwrt
 ===================
 Trying to build
-https://git.allseenalliance.org/cgit/core/openwrt_feed.git
-on travis-ci
+https://git.allseenalliance.org/cgit/core/openwrt_feed.git on travis-ci.
+
+The ultimate goal is to get https://git.allseenalliance.org/cgit/multimedia/audio.git/ going on OpenWrt, as it seemingly is the basis for the allegedly open source Qualcomm® AllPlay™ (seemingly based on: doubleTwist MagicPlay) service.
 
 Currently this fails with:
 
