@@ -27,7 +27,7 @@ install:
 - tar xjf $FILE
 - cd $TRAVIS_BUILD_DIR/sdk/OpenWrt-SDK-*
 - cp feeds.conf.default feeds.conf
-- echo "src-git alljoyn https://git.allseenalliance.org/gerrit/core/openwrt_feed.git" >> feeds.conf
+- echo "src-git alljoyn https://git.allseenalliance.org/gerrit/core/openwrt_feed;barrier_breaker" >> feeds.conf
 - ./scripts/feeds update -a
 - ./scripts/feeds install -a -p alljoyn
 script:
