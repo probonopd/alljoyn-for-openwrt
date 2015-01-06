@@ -1,7 +1,7 @@
 alljoyn-for-openwrt
 ===================
 Trying to build
-https://git.allseenalliance.org/cgit/core/openwrt_feed.git on travis-ci.
+https://git.allseenalliance.org/cgit/core/openwrt_feed.git on travis-ci following the instructions on https://allseenalliance.org/developers/develop/building/linux/openwrt.
 
 The ultimate goal is to get https://git.allseenalliance.org/cgit/multimedia/audio.git/ going on OpenWrt, as it seemingly is the basis for the allegedly open source [Qualcomm® AllPlay™](https://www.qualcomm.com/products/allplay/platform) (seemingly based on: [doubleTwist MagicPlay](http://magicplay.com)) multi-room streaming service (and Sonos, AirPlay competitor).
 
