@@ -9,12 +9,7 @@ Also see this patch by "DVD" Jon Lech Johansen: http://nanocr.eu/2013/07/02/ampl
 
 Apparently the sound receiving hardware currently contains a "Qualcomm AllPlay Smart Audio Module", but if the whole thing is supposed to be open source then it should be possible to have an OpenWrt-based device to replace the "Smart Audio Module". However, Qualcomm support so far seems to be mainly concerned with the client (app) side, as there is a "Qualcomm AllPlay Click SDK" support forum: https://developer.qualcomm.com/forums/qdevnet-forums/wireless-home-audio-qualcomm-allplay-click-sdk
 
-Currently compilation of the alljoyn Barrier Breaker feed on travis-ci fails because
-
-```
-https://git.allseenalliance.org/gerrit/core/openwrt_feed;barrier_breaker
-```
-appears to be gone.
+Currently compilation of the alljoyn Barrier Breaker feed on travis-ci fails because the compiler is not found.
 
 See the travis-ci logs for more details.
 
