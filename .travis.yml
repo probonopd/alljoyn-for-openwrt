@@ -29,7 +29,7 @@ install:
 - cd dl/
 - URL="https://build.allseenalliance.org/ci/view/Core%20master%20SDK/job/master-source-extraction/lastSuccessfulBuild/artifact/depot/"
 - FILES=$(wget -q "$URL" -O - | grep -Poe "href=\".*?-src.tar.gz" | cut -d '"' -f 2 | sort | uniq)
-- for FILE in $FILES ; do ; wget "$URL$FILE" ; done
+- for FILE in $FILES ; do wget "$URL$FILE" ; done
 - cd -
 - cp feeds.conf.default feeds.conf
 - echo "src-git alljoyn https://git.allseenalliance.org/gerrit/core/openwrt_feed;master" >> feeds.conf
